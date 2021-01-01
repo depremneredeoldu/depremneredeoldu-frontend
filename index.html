@@ -39,26 +39,7 @@
     </script>
 
     <!-- data received from api -->
-    <script>
-        var myGeocode;
-        let url = "https://api.depremneredeoldu.com/earthquakes";
-        var xhr = new XMLHttpRequest();
-
-        function loadJSON(url){
-            
-            xhr.open("GET", url, false);
-            xhr.send(null);
-
-            // set json data into a global variable
-            myGeocode = JSON.parse(xhr.responseText);
-        
-        }
-
-        loadJSON(url);
-
-    </script>
-
-    
+    <script src="assets/js/dataFromAPI.js?v="></script>   
 
 </head>
 
