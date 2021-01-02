@@ -7,7 +7,7 @@ function writeLastQuakes(detailsOfAllQuakes, rangeValue) {
             parseFloat(detailsOfAllQuakes[key].latitude),
         ];
         let informationPopup = `<strong>Lokasyon : ${detailsOfAllQuakes[key].location}</strong><br>\
-                                Şiddet : ${detailsOfAllQuakes[key].magnitude}<br>\
+                                Büyüklük : ${detailsOfAllQuakes[key].magnitude}<br>\
                                 Derinlik : ${detailsOfAllQuakes[key].depth}<br>\
                                 Tarih : ${detailsOfAllQuakes[key].time} - ${detailsOfAllQuakes[key].date}`;
 
@@ -17,7 +17,7 @@ function writeLastQuakes(detailsOfAllQuakes, rangeValue) {
         ) {
             htmlContent += `
             <a id="linkToFly" href="#" onclick="geoToFly(${detailsOfAllQuakes[key].longitude}, ${detailsOfAllQuakes[key].latitude}); toggleNav(); displayPopup([${coordinates}], '${informationPopup}');"><p>Lokasyon: ${detailsOfAllQuakes[key].location}</p></a>
-            <b><p style=color:#4daf7c;>Şiddet: ${detailsOfAllQuakes[key].magnitude}</p></b>
+            <b><p style=color:#4daf7c;>Büyüklük: ${detailsOfAllQuakes[key].magnitude}</p></b>
             <p>Derinlik: ${detailsOfAllQuakes[key].depth}</p>
             <p>Saat/Tarih: ${detailsOfAllQuakes[key].time} - ${detailsOfAllQuakes[key].date}</p><hr>`;
         } else if (
@@ -26,13 +26,13 @@ function writeLastQuakes(detailsOfAllQuakes, rangeValue) {
         ) {
             htmlContent += `
             <a id="linkToFly" href="#" onclick="geoToFly(${detailsOfAllQuakes[key].longitude}, ${detailsOfAllQuakes[key].latitude}); toggleNav(); displayPopup([${coordinates}], '${informationPopup}');"><p>Lokasyon: ${detailsOfAllQuakes[key].location}</p></a>
-            <b><p style=color:#F7CA18;>Şiddet: ${detailsOfAllQuakes[key].magnitude}</p></b>
+            <b><p style=color:#F7CA18;>Büyüklük: ${detailsOfAllQuakes[key].magnitude}</p></b>
             <p>Derinlik: ${detailsOfAllQuakes[key].depth}</p>
             <p>Saat/Tarih: ${detailsOfAllQuakes[key].time} - ${detailsOfAllQuakes[key].date}</p><hr>`;
         } else if (detailsOfAllQuakes[key].magnitude >= 4) {
             htmlContent += `
             <a id="linkToFly" href="#" onclick="geoToFly(${detailsOfAllQuakes[key].longitude}, ${detailsOfAllQuakes[key].latitude}); toggleNav(); displayPopup([${coordinates}], '${informationPopup}');"><p>Lokasyon: ${detailsOfAllQuakes[key].location}</p></a>
-            <b><p style=color:red;>Şiddet: ${detailsOfAllQuakes[key].magnitude}</p></b>
+            <b><p style=color:red;>Büyüklük: ${detailsOfAllQuakes[key].magnitude}</p></b>
             <p>Derinlik: ${detailsOfAllQuakes[key].depth}</p>
             <p>Saat/Tarih: ${detailsOfAllQuakes[key].time} - ${detailsOfAllQuakes[key].date}</p><hr>`;
         }

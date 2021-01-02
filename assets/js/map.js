@@ -6,7 +6,7 @@ for (var key in myGeocode.earthquakes) {
         type: "Feature",
         properties: {
             description: `<strong>Lokasyon : ${myGeocode["earthquakes"][key].location}</strong><br>
-                Şiddet : ${myGeocode["earthquakes"][key].magnitude}<br>
+                Büyüklük : ${myGeocode["earthquakes"][key].magnitude}<br>
                 Derinlik : ${myGeocode["earthquakes"][key].depth}<br>
                 Tarih : ${myGeocode["earthquakes"][key].time} - ${myGeocode["earthquakes"][key].date}`,
             infoAboutMagnitude: parseFloat(
@@ -45,7 +45,7 @@ for (var key in myGeocode.earthquakes) {
         type: "Feature",
         properties: {
             description: `<strong>Lokasyon : ${myGeocode["earthquakes"][key].location}</strong><br>
-                        Şiddet : ${myGeocode["earthquakes"][key].magnitude}<br>
+                        Büyüklük : ${myGeocode["earthquakes"][key].magnitude}<br>
                         Derinlik : ${myGeocode["earthquakes"][key].depth}<br>
                         Tarih : ${myGeocode["earthquakes"][key].time} - ${myGeocode["earthquakes"][key].date}`,
         },
