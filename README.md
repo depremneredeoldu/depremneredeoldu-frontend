@@ -1,6 +1,8 @@
 # DepremNeredeOldu: Frontend
 
-For this project, we used Vanilla JS on the frontend. The goal is to visualize the earthquakes in Turkey on map with [MapBox](https://www.mapbox.com). The data comes from our API backend that you can take a look in [depremneredeoldu-backend](https://github.com/depremneredeoldu/depremneredeoldu-backend) repository.
+For this project, we used Vanilla JS on the frontend. You could clone the repository and test directly on your browser.
+
+The goal is to visualize the earthquakes in Turkey on map with [MapBox](https://www.mapbox.com). The data comes from our API backend that you can take a look in [depremneredeoldu-backend](https://github.com/depremneredeoldu/depremneredeoldu-backend) repository.
 
 ## Install
 
