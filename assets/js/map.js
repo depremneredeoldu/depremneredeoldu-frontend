@@ -129,9 +129,8 @@ listFeaturesImportantQuakes = getImportantQuakes(
 
 // call function to initialize the map with the features as parameters.
 
-//private key for the domain depremneredeoldu.com
-mapboxgl.accessToken =
-    "pk.eyJ1IjoiYWxpY2FueXVrc2VsIiwiYSI6ImNrajIxZzk1azBvdnUzMHA4a2l6ZDRuaHgifQ.h2r1WhCZ9tJ9AIBIt3lLwQ";
+mapboxgl.accessToken = ACCESSTOKEN;
+
 var map = new mapboxgl.Map({
     container: "map",
     style: "mapbox://styles/alicanyuksel/ckf7kg2t70iah19np73mhnx48", // stylesheet location
