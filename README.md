@@ -9,7 +9,8 @@ For the frontend, we used Vanilla JS. So you can clone the repo and test directl
 ## Before to test
 
 You have to change the <u>access token</u> to use **MapBox** in the config file in **assets/js/configMap.js**
-To do that, you just need sign up on [MapBox](https://mapbox.com).
+
+To do that, you just need to sign up on [MapBox](https://mapbox.com).
 
 ## Data
 
