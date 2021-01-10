@@ -64,6 +64,11 @@ p.copyright {
     color: white;
 }
 
+p.infoPulsingDot {
+    text-align: center;
+    font-size: 12px;
+}
+
 h5 {
 color: rgb(228, 18, 108);
 font-family: sans-serif;

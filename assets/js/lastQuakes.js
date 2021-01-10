@@ -1,6 +1,7 @@
 function writeLastQuakes(detailsOfAllQuakes, rangeValue) {
     let htmlContent = `<center><h5>Son ${rangeValue} Depremler</h5><p class="copyright">\u24D8 Kaynak: Kandilli Rasathanesi</p></center>
-                       <hr>`;
+                        <p class="infoPulsingDot"><span style="color:#4DAF7C;font-size:12px;">Yeşil : </span><span style="font-size:12px;">0 - 1.9</span>&ensp;&emsp;<span style="color:#F7CA18;font-size:12px;">Sarı : </span><span style="font-size:12px;">2.0 - 3.9</span>&ensp;&emsp;<span style="color:#FF6464;font-size:12px;">Kırmızı :</span> <span style="font-size:12px;">+4.0</span></p>
+                        <hr>`;
     for (var key in detailsOfAllQuakes.slice(null, rangeValue)) {
         let coordinates = [
             parseFloat(detailsOfAllQuakes[key].longitude),
