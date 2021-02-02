@@ -1,188 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8”/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deprem Nerede Oldu ?</title>
-    <meta name="description" content='Son deprem nerede oldu? Türkiye&apos;de meydana gelen depremleri harita üzerinde şiddet ve merkezleri ile anlık görüntüleyin.'>
-    <meta name="keyword" content="son deprem, deprem nerede oldu, deprem oldu, son dakika deprem, bugün deprem nerede oldu, deprem harita, deprem kaç şiddetinde">
+    <head>
+        <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8”/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Deprem Nerede Oldu ?</title>
+        <meta
+            name="description"
+            content="Son deprem nerede oldu? Türkiye'de meydana gelen depremleri harita üzerinde şiddet ve merkezleri ile anlık görüntüleyin."
+        />
+        <meta
+            name="keyword"
+            content="son deprem, deprem nerede oldu, deprem oldu, son dakika deprem, bugün deprem nerede oldu, deprem harita, deprem kaç şiddetinde"
+        />
 
-    <link rel="canonical" href="https://www.depremneredeoldu.com"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        
-    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
-    <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css?v=">
-    
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png?v=">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png?v=">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png?v=">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
-    <!-- Favicon in the root for google search -->
-    <link rel="shortcut icon" href="/favicon.ico?v=">
-    <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+        <link rel="canonical" href="https://www.depremneredeoldu.com" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y22P81031W"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+        <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+        <link
+            href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/css/style.css?v=" />
 
-        gtag('config', 'G-Y22P81031Wx');
-    </script>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/favicon/apple-touch-icon.png?v="
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/favicon/favicon-32x32.png?v="
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="assets/favicon/favicon-16x16.png?v="
+        />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico?v=" />
+        <link rel="manifest" href="assets/favicon/site.webmanifest" />
+        <!-- Favicon in the root for google search -->
+        <link rel="shortcut icon" href="/favicon.ico?v=" />
+        <meta name="msapplication-TileColor" content="#00aba9" />
+        <meta
+            name="msapplication-config"
+            content="assets/favicon/browserconfig.xml"
+        />
+        <meta name="theme-color" content="#ffffff" />
 
-    <!-- Get an ACCESSTOKEN to use mapbox from config file -->
-    <script src="assets/js/configMap.js?v="></script> 
-
-    <!-- data received from api -->
-    <script src="assets/js/dataFromAPI.js?v="></script>   
-
-</head>
-
-<body>   
-    <script>
-        const defaultRangeValue = 50;
-
-        var navToggled = false;
-        function toggleNav() {
-            if (navToggled) {
-                openNav();
-                setButtonContent() 
-                navToggled = false;
-            } else {
-                closeNav();
-                setButtonContent() 
-                navToggled = true;
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Y22P81031W"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
             }
-        }
+            gtag("js", new Date());
 
-        function setButtonContent() {
-            if (navToggled) {
-                document.getElementById("openbtn").textContent = '\u2715 Kapat';
-            } else {
-                document.getElementById("openbtn").textContent = "\u2630 Son Depremleri Listele"
-            }
-        }
+            gtag("config", "G-Y22P81031Wx");
+        </script>
+        <!-- Get an ACCESSTOKEN to use mapbox from config file -->
 
+        <script src="assets/js/configMap.js?v="></script>
 
-        /* Set display) */
-        function openNav() {
-            document.getElementById("mySidebar").style.display = "block";
-        }
-        
-        /* Close slidebar */
-        function closeNav() {
-            document.getElementById("mySidebar").style.display = "none";
-        }
-        
-    </script>
+        <!-- Map Utils -->
+        <script src="assets/js/dataFromAPI.js?v="></script>
+        <script src="assets/js/pulsingDot.js?v="></script>
+        <script src="assets/js/structureData.js?v="></script>
+    </head>
 
-    <!-- loader div -->
-    <div id="loader"></div>
+    <body>
+        <!-- Toggle Bar-->
+        <script src="assets/js/toggleNav.js?v="></script>
 
+        <!-- loader div -->
+        <div id="loader"></div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <ul class="navbar-nav mr-auto">
-          <span id="infoNavbar" class="navbar-text">
-              <script>
-                document.write(`Son ${defaultRangeValue} deprem görüntüleniyor. Yandan güncelleyebilirsiniz.`)
-              </script>
-          </span>
-        </ul>
-        <div id="slidecontainer">
-            <span class="leftlabel">25</span>
-            <script>
-                document.write(`<input type="range" id="myRange" min="25" max="500" value="${defaultRangeValue}"  step="25" oninput="updateValues(this.value)" onchange="updateValues(this.value)">`);
-            </script>
-            <span class="rightlabel">500</span>
-        </div>
-    </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <ul class="navbar-nav mr-auto">
+                <span id="infoNavbar" class="navbar-text">
+                    <script>
+                        document.write(
+                            `Son ${defaultRangeValue} deprem görüntüleniyor. Yandan güncelleyebilirsiniz.`
+                        );
+                    </script>
+                </span>
+            </ul>
+            <div id="slidecontainer">
+                <span class="leftlabel">25</span>
+                <script>
+                    document.write(
+                        `<input type="range" id="myRange" min="25" max="500" value="${defaultRangeValue}"  step="25" oninput="updateValues(this.value)" onchange="updateValues(this.value)">`
+                    );
+                </script>
+                <span class="rightlabel">500</span>
+            </div>
+        </nav>
 
-    <!--
+        <!--
         Navbar script
     -->
-    <script src="assets/js/navbar.js?v="></script>
-        
+        <script src="assets/js/navbar.js?v="></script>
 
-    <!--
+        <!--
         Include our map
     -->
-        
-    <div id="map">
-        <script src="assets/js/map.js?v="></script>
-    </div>
 
+        <div id="map">
+            <script src="assets/js/map.js?v="></script>
+        </div>
 
-
-    <!-- 
+        <!-- 
         Last quakes box
     -->
 
-    <script src="assets/js/lastQuakes.js?v="></script>
-    
+        <script src="assets/js/lastQuakes.js?v="></script>
 
-    
-    <!-- 
+        <!-- 
         Important quakes box
     -->
-    <script src="assets/js/importantQuake.js?v="></script>   
+        <script src="assets/js/importantQuake.js?v="></script>
 
-    <div class="wrapper">
-        <div class="buttonSideMenu"> 
-            <button id="openbtn" class="openbtn" onclick="toggleNav();">&#10005; Kapat</button>
+        <div class="wrapper">
+            <div class="buttonSideMenu">
+                <button id="openbtn" class="openbtn" onclick="toggleNav();">
+                    &#10005; Kapat
+                </button>
+            </div>
+
+            <div id="mySidebar" class="sidebar">
+                <div id="infoLastQuakes" class="infoLastQuakes"></div>
+                <br />
+                <div id="infoQuakesImportant" class="infoQuakesImportant"></div>
+            </div>
         </div>
 
-    <div id="mySidebar" class="sidebar">
-      
-        <div id="infoLastQuakes" class='infoLastQuakes'></div><br>
-        <div id="infoQuakesImportant" class='infoQuakesImportant'></div>
-    </div>
-</div>
-     
-      <script> 
-        let lastQuakesBox = document.getElementById("infoLastQuakes");
-        writeLastQuakes(detailsOfAllQuakes, defaultRangeValue);
-    </script>
+        <script>
+            let lastQuakesBox = document.getElementById("infoLastQuakes");
+            writeLastQuakes(detailsOfAllQuakes, defaultRangeValue);
+        </script>
 
-    <script>
-        let infoQuakesImportantBox = document.getElementById("infoQuakesImportant");
-        writeImportantQuakes(listFeaturesImportantQuakes, defaultRangeValue);
-        
-    </script>
+        <script>
+            let infoQuakesImportantBox = document.getElementById(
+                "infoQuakesImportant"
+            );
+            writeImportantQuakes(
+                listFeaturesImportantQuakes,
+                defaultRangeValue
+            );
+        </script>
 
+        <script>
+            var loader;
 
-    <script>
-        var loader;
-
-        function loadNow(opacity) {
-            if (opacity <= 0) {
-                displayContent();
-            } else {
-                loader.style.opacity = opacity;
-                window.setTimeout(function() {
-                    loadNow(opacity - 0.05);
-                }, 50);
+            function loadNow(opacity) {
+                if (opacity <= 0) {
+                    displayContent();
+                } else {
+                    loader.style.opacity = opacity;
+                    window.setTimeout(function () {
+                        loadNow(opacity - 0.05);
+                    }, 50);
+                }
             }
-        }
 
-        function displayContent() {
-            loader.style.display = 'none';
-            document.getElementById('map').style.display = 'block';
-        }
+            function displayContent() {
+                loader.style.display = "none";
+                document.getElementById("map").style.display = "block";
+            }
 
-        document.addEventListener("DOMContentLoaded", function() {
-            loader = document.getElementById('loader');
-            loadNow(1.6);
-        });
-    </script>
-
-</body>
+            document.addEventListener("DOMContentLoaded", function () {
+                loader = document.getElementById("loader");
+                loadNow(1.6);
+            });
+        </script>
+    </body>
 </html>
