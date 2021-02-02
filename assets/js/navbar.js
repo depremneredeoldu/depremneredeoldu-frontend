@@ -3,7 +3,7 @@ let infoNavbar = document.getElementById("infoNavbar");
 
 function updateValues(newVal) {
     rangeInput = newVal;
-    infoNavbar.innerHTML = `Son ${newVal} deprem görüntüleniyor. Yandan güncelleyebilirsiniz.`;
+    infoNavbar.innerHTML = `Son ${newVal} deprem görüntüleniyor. Yan taraftan güncelleyebilirsiniz.`;
 
     // to filter all quakes with the magnitude by adding a color on pulsing dots.
 
