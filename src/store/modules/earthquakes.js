@@ -37,6 +37,19 @@ export const earthquakeStore = {
         setDataReceived(state, value) {
             state.isDataReceived = value
         },
+        filterEarthquakes(state) {
+            for (const eachEarthquake of state.allEarthquakesInfo.slice(0, 50)) {
+                if (eachEarthquake.magnitude > 0 && eachEarthquake.magnitude < 2) {
+                    state.allGreenEarthquakeFeatures.push(eachEarthquake.getMapFeature())
+                }
+                else if (eachEarthquake.magnitude >= 2 && eachEarthquake.magnitude < 4) {
+                    state.allYellowEarthquakeFeatures.push(eachEarthquake.getMapFeature())
+                }
+                else if (eachEarthquake.magnitude >= 4) {
+                    state.allRedEarthquakeFeatures.push(eachEarthquake.getMapFeature())
+                }
+            }
+        },
     },
     actions: {
         fetchEarthquakes({ commit }) {
