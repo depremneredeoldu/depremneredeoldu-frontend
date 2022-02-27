@@ -4,6 +4,13 @@ const initState = () => {
     return {
         allEarthquakesInfo: [],
         isDataReceived: false,
+        allEarthquakeFeatures: [],
+        allGreenEarthquakeFeatures: [],
+        allYellowEarthquakeFeatures: [],
+        allRedEarthquakeFeatures: [],
+        greenEarthquakeColor: { backgroundColor: "rgba(77, 175, 124, 1)", circleColor: "rgba(77, 175, 124, 0.2)" },
+        yellowEarthquakeColor: { backgroundColor: "rgba(247, 202, 24, 1)", circleColor: "rgba(247, 202, 24, 0.2)" },
+        redEarthquakeColor: { backgroundColor: "rgba(255, 100, 100, 1)", circleColor: "rgba(255, 100, 100, 0.2)" },
     }
 }
 
