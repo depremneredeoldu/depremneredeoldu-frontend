@@ -12,8 +12,20 @@ export const earthquakeStore = {
     namespaced: true,
     state: initState(),
     mutations: {
-        setEarthquakes(state, earthquakes) {
-            state.allEarthquakesInfo = earthquakes
+        saveEarthquakes(state, earthquakes) {
+            for (const eachEarthquake of earthquakes) {
+                const earthquakeObject = new Earthquake(
+                    eachEarthquake.earthquake_id,
+                    eachEarthquake.date,
+                    eachEarthquake.time,
+                    eachEarthquake.latitude,
+                    eachEarthquake.longitude,
+                    eachEarthquake.depth,
+                    eachEarthquake.magnitude,
+                    eachEarthquake.location
+                );
+                state.allEarthquakesInfo.push(earthquakeObject);
+            }
         },
         setDataReceived(state, value) {
             state.isDataReceived = value
