@@ -1,4 +1,5 @@
 import axios from "axios";
+import Earthquake from "../../model/earthquake";
 
 const initState = () => {
     return {
@@ -13,7 +14,6 @@ const initState = () => {
         redEarthquakeColor: { backgroundColor: "rgba(255, 100, 100, 1)", circleColor: "rgba(255, 100, 100, 0.2)" },
     }
 }
-
 
 export const earthquakeStore = {
     namespaced: true,
@@ -52,11 +52,12 @@ export const earthquakeStore = {
         },
     },
     actions: {
-        fetchEarthquakes({ commit }) {
+        async fetchEarthquakes({ commit }) {
             return axios.get(process.env.VUE_APP_EARTHQUAKE_API_URL)
                 .then(response => {
-                    commit('setEarthquakes', response.data.earthquakes)
+                    commit('saveEarthquakes', response.data.earthquakes.reverse())
                     commit('setDataReceived', true)
+                    commit('filterEarthquakes')
                 }).catch(err => {
                     console.log(err);
                 })
