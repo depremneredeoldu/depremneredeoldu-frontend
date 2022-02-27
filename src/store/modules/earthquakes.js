@@ -65,6 +65,31 @@ export const earthquakeStore = {
     getters: {
         getAllEarthquakeData(state) {
             return state.allEarthquakesInfo;
+        },
+        getFilteredMapFeatures(state, getters, rootState, rootGetters) {
+            return {
+                green: {
+                    features: state.allGreenEarthquakeFeatures,
+                    pulsingDot: rootGetters["map/getPulsingDot"](state.greenEarthquakeColor),
+                    pulsingDotName: "greenPulsingDot",
+                    sourceName: "green",
+                    layerId: "greenDot"
+                },
+                yellow: {
+                    features: state.allYellowEarthquakeFeatures,
+                    pulsingDot: rootGetters["map/getPulsingDot"](state.yellowEarthquakeColor),
+                    pulsingDotName: "yellowPulsingDot",
+                    sourceName: "yellow",
+                    layerId: "yellowDot"
+                },
+                red: {
+                    features: state.allRedEarthquakeFeatures,
+                    pulsingDot: rootGetters["map/getPulsingDot"](state.redEarthquakeColor),
+                    pulsingDotName: "redPulsingDot",
+                    sourceName: "red",
+                    layerId: "redDot"
+                }
+            }
         }
     }
 }
