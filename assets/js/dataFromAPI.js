@@ -1,6 +1,6 @@
 var myGeocode;
 
-let url = "https://api.depremneredeoldu.com/earthquakes?limit=500";
+let url = "https://api.depremneredeoldu.com/v1/earthquakes?limit=500";
 
 var xhr = new XMLHttpRequest();
 
