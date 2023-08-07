@@ -11,7 +11,6 @@ function loadJSON(url) {
 
   // set json data into a global variable
   myGeocode = JSON.parse(xhr.responseText);
-  myGeocode["earthquakes"];
 }
 
 loadJSON(url);
