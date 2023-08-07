@@ -11,8 +11,6 @@ function loadJSON(url) {
 
   // set json data into a global variable
   myGeocode = JSON.parse(xhr.responseText);
-  // reverse for sorting the date
-  myGeocode["earthquakes"].reverse();
 }
 
 loadJSON(url);
