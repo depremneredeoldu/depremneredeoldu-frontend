@@ -1,7 +1,6 @@
 FROM node:latest as build
-WORKDIR /depremneredeoldu-frontend
-COPY /depremneredeoldu-frontend .
+COPY . /app
 RUN npm install -g serve
 EXPOSE 80
-CMD ["serve", "-s", ".", "-l", "80"]
+CMD ["serve", "-s", "app", "-l", "80"]
 
